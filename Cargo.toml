@@ -13,9 +13,9 @@ categories = ["science", "data-structures"]
 
 [dependencies]
 byteorder = "1.1"
-chrono = "0.4"
+chrono = { version = "0.4", features = ["serde", "clock"], default-features = false }
 log = "0.3"
-num = "0.1"
+num = "0.2"
 quick-error = "1.2"
 uuid = "0.6"
 
